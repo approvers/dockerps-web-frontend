@@ -36,6 +36,9 @@ jobs:
           override: true
           components: rustfmt,clippy
 
+      - name: Install npm dependencies
+        run: yarn
+
       - name: Build
         run: yarn build
 
