@@ -53,10 +53,10 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: dockerps-web-frontend
-          path:
-            - public/
-            - package.json
-            - yarn.lock
+          path: |
+            public/
+            package.json
+            yarn.lock
 
   publish:
     runs-on: ubuntu-latest
