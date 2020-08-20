@@ -5,5 +5,22 @@
   "repository": "git@github.com:approvers/dockerps-web-frontend.git",
   "author": "Naoki Ikeguchi <root@siketyan.dev>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --watch",
+    "dev:prod": "webpack-dev-server --mode production --watch",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.0",
+    "@types/webpack": "^4.41.21",
+    "@wasm-tool/wasm-pack-plugin": "^1.3.1",
+    "ts-loader": "^8.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
