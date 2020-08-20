@@ -1,0 +1,9 @@
+{
+  "name": "dockerps-web-frontend",
+  "version": "0.1.0",
+  "description": "Frontend implementation in Rust for dockerps-web.",
+  "repository": "git@github.com:approvers/dockerps-web-frontend.git",
+  "author": "Naoki Ikeguchi <root@siketyan.dev>",
+  "license": "MIT",
+  "private": false
+}
