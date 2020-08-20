@@ -6,11 +6,16 @@
   "author": "Naoki Ikeguchi <root@siketyan.dev>",
   "license": "MIT",
   "private": false,
+  "files": [
+    "public/**/*.*"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --mode development --watch",
     "dev:prod": "webpack-dev-server --mode production --watch",
     "build": "webpack --mode production",
-    "build:dev": "webpack --mode development"
+    "build:dev": "webpack --mode development",
+    "clean": "rimraf public/*.js public/**.wasm",
+    "prepublishOnly": "yarn clean && yarn build"
   },
   "devDependencies": {
     "@types/node": "^14.6.0",
