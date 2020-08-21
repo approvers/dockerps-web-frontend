@@ -1,17 +1,15 @@
 use yew::prelude::*;
 
-pub struct App {
-    value: String,
-}
+use crate::layouts::container_listing::ContainerListing;
+
+pub struct App {}
 
 impl Component for App {
     type Message = ();
     type Properties = ();
 
     fn create(_: Self::Properties, _link: ComponentLink<Self>) -> Self {
-        Self {
-            value: "It works!".to_string(),
-        }
+        Self {}
     }
 
     fn update(&mut self, _msg: Self::Message) -> ShouldRender {
@@ -24,9 +22,9 @@ impl Component for App {
 
     fn view(&self) -> Html {
         html! {
-            <>
-                <p>{ &self.value }</p>
-            </>
+            <main>
+                <ContainerListing />
+            </main>
         }
     }
 }
