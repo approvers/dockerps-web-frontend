@@ -5,6 +5,7 @@ use wasm_bindgen::prelude::*;
 mod app;
 mod components;
 mod models;
+mod services;
 
 #[wasm_bindgen(start)]
 pub fn run_app() {
