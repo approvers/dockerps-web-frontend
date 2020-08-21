@@ -35,6 +35,9 @@ const config: ConfigurationFactory = (
             },
         ],
     },
+    resolve: {
+        extensions: ['.wasm', '.js', '.ts', '.sass', '.scss'],
+    },
     plugins: [
         new WasmPackPlugin({
             crateDirectory: baseDirectory,
