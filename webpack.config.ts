@@ -25,6 +25,14 @@ const config: ConfigurationFactory = (
                     configFile: 'tsconfig.loader.json',
                 },
             },
+            {
+                test: /\.s[ac]ss$/,
+                loaders: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
         ],
     },
     plugins: [
