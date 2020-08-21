@@ -1,7 +1,8 @@
 use wasm_bindgen::prelude::*;
-use yew::prelude::*;
 
 mod app;
+mod components;
+mod models;
 
 #[wasm_bindgen(start)]
 pub fn run_app() {
