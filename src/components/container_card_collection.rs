@@ -35,14 +35,14 @@ impl Component for ContainerCardCollection {
     }
 
     fn view(&self) -> Html {
-        html! {
-            <>
-                {
-                    for self.props.containers.iter().map(|container| html! {
-                        <ContainerCard container={ container.clone() } />
-                    })
+        self.props
+            .containers
+            .iter()
+            .map(|container| {
+                html! {
+                    <ContainerCard container={ container.clone() } />
                 }
-            </>
-        }
+            })
+            .collect()
     }
 }
