@@ -61,11 +61,11 @@ main {
 
     font-size: 2em;
 
-    &[data-status="Up"] {
+    &[data-status^="Up"] {
       color: #00a700;
     }
 
-    &[data-status="Exited"] {
+    &[data-status^="Exited"] {
       color: #a70000;
     }
   }
