@@ -38,7 +38,7 @@ where
             .method("GET")
             .uri("/api.json")
             .body(Nothing)
-            .map_err(|error| error.into())
+            .map_err(Error::from)
             .and_then(|request| {
                 FetchService::fetch(
                     request,
