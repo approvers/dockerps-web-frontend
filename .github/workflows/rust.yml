@@ -92,4 +92,4 @@ jobs:
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
 
       - name: Publish to GitHub Package Registry
-        run: yarn publish --non-interactive
+        run: yarn publish --non-interactive --verbose
