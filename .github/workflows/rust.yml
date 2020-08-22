@@ -86,10 +86,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-          registry: https://npm.pkg.github.com/
 
       - name: Configure Yarn to authenticate as the actor
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
 
       - name: Publish to GitHub Package Registry
-        run: yarn publish --non-interactive --registry https://npm.pkg.github.com/ --verbose
+        run: yarn publish --non-interactive --registry https://npm.pkg.github.com/ --verbose --ignore-scripts
