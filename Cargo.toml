@@ -1,6 +1,6 @@
 [package]
 name = "dockerps-web-frontend"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Naoki Ikeguchi <root@siketyan.dev>"]
 edition = "2018"
 
