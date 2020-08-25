@@ -22,9 +22,9 @@ impl Component for App {
 
     fn view(&self) -> Html {
         html! {
-            <main>
+            <>
                 <ContainerListing />
-            </main>
+            </>
         }
     }
 }

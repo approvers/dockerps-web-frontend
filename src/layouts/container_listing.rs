@@ -56,7 +56,9 @@ impl Component for ContainerListing {
     fn view(&self) -> Html {
         html! {
             <>
-                <ContainerCardCollection containers={ self.containers.clone() } />
+                <main>
+                    <ContainerCardCollection containers={ self.containers.clone() } />
+                </main>
             </>
         }
     }
