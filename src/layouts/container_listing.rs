@@ -25,10 +25,7 @@ impl Component for ContainerListing {
         let mut fetcher = ContainersFetcher::new(link);
 
         fetcher
-            .fetch(
-                |containers| Msg::FetchContainersCompleted(containers),
-                || Msg::FetchContainersFailed,
-            )
+            .fetch(Msg::FetchContainersCompleted, || Msg::FetchContainersFailed)
             .expect("Failed to fetch containers.");
 
         Self {
