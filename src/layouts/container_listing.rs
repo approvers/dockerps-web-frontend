@@ -3,6 +3,7 @@ use yew::prelude::*;
 use yew::services::ConsoleService;
 
 use crate::components::container_card_collection::ContainerCardCollection;
+use crate::components::title_bar::TitleBar;
 use crate::models::container::Container;
 use crate::services::containers_fetcher::ContainersFetcher;
 
@@ -56,6 +57,9 @@ impl Component for ContainerListing {
     fn view(&self) -> Html {
         html! {
             <>
+                <header>
+                    <TitleBar count={ self.containers.len() } />
+                </header>
                 <main>
                     <ContainerCardCollection containers={ self.containers.clone() } />
                 </main>
